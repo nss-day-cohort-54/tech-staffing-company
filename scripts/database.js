@@ -56,3 +56,16 @@ const database = {
         { "id": 10, "company": "Chatterbridge", "address": "74 Blackbird Drive", "skillNeeded": "Servers", "engineersNeeded": 14 }
     ]
 }
+
+// Create a function to export companies
+export const getCompanies = () => {
+    const companiesCopy = database.companies.map(company => ({...company}))
+    return companiesCopy
+}
+
+
+// Create a function to export candidate
+export const getCandidates = () => {
+    const candidatesCopy = database.candidates.map(candidate => ({...candidate}))
+    return candidatesCopy
+}
