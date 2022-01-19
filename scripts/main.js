@@ -79,6 +79,4 @@ for (const company of companies) {
 }
 
 // Put it in the inner HTML
-const matchingNodes = document.querySelectorAll(".container")
-
-.innerHTML += templateString
+document.querySelector("#container").innerHTML += templateString
